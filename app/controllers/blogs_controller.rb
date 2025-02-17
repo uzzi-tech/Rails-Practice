@@ -5,7 +5,7 @@ class BlogsController < ApplicationController
   def index
     @blogs = Blog.all
   end
-
+ 
   # GET /blogs/1 or /blogs/1.json
   def show
   end
@@ -45,7 +45,7 @@ class BlogsController < ApplicationController
         format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
     end
-  end
+  end 
 
   # DELETE /blogs/1 or /blogs/1.json
   def destroy
